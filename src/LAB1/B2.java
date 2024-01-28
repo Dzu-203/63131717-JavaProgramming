@@ -8,7 +8,6 @@ public class B2 {
 
         System.out.print("Nhập chiều dài của hình chữ nhật: ");
         double dai = scanner.nextDouble();
-
         System.out.print("Nhập chiều rộng của hình chữ nhật: ");
         double rong = scanner.nextDouble();
 

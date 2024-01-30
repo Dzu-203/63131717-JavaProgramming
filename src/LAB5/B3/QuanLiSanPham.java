@@ -78,14 +78,19 @@ public class QuanLiSanPham extends SanPham {
 
     static void xoa(){
         System.out.print("Nhập tên cần xóa : ");
-        String CanXoa = scanner.next();
-        if (danhSachSanPham.contains(CanXoa)){
-            danhSachSanPham.remove(CanXoa);
-            System.out.println("Đã xóa khỏi danh sách");
-        }else {
-            System.out.println("Không tìm thấy tên đã xóa");
+        String canXoa = scanner.next();
+        boolean check = false;
+        for (SanPham sanPham : danhSachSanPham){
+            if (sanPham.ten.equals(canXoa)){
+                danhSachSanPham.remove(sanPham);
+                check = true;
+            }
         }
-
+        if (check == true){
+            System.out.println("Sản phẩm đã được xóa");
+        }else {
+            System.out.println("Không tìm thấy sản phẩm");
+        }
     }
 
     static void xuatGiaTrungBinh() {

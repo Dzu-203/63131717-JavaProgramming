@@ -10,6 +10,6 @@ public class B1 {
         String ho = hoTen.substring(0,hoTen.indexOf(" "));
         String tenDem = hoTen.substring(hoTen.indexOf(" "),hoTen.lastIndexOf(" "));
         String ten = hoTen.substring(hoTen.lastIndexOf(" "));
-        System.out.println(String.format("Họ : %s | Tên Đệm : %s | Tên : %s",ho,tenDem,ten));
+        System.out.println(String.format("Họ : %s | Tên Đệm : %s | Tên : %s",ho.toUpperCase(),tenDem,ten.toUpperCase()));
     }
 }
